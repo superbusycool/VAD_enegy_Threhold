@@ -1,0 +1,6 @@
+>**本文件操作指南:**
+>>- 首先,主要VAD实现主体程序在**Threshold.py**中,训练模型数据来源在相对路径'Example_Try3.2\Example_LastTry3\data_sheet'中其中包括官方所给的.wav与,txt文件,
+而结果所生成的.txt文件位于相对路径'Example_Try3.2\Data_predict'中,保存语音端点格式与官方要求一致.
+>>- 官方测试时可将音频存入data_sheet这一文件夹中,thredhold.py中会遍历这一文件夹中的.wav音频,结果存在Data_predict文件夹中
+>>- 检验本算法性能可通过evaluate.py这一代码,其中需对文件路径最后的wav与txt文件稍作修改即可得到测试结果
+>>- Data_Analysis与Feature_extraction两个文件夹,存有本VAD模型所需要的相应运算代码,主要对音频进行分段与特征提取
